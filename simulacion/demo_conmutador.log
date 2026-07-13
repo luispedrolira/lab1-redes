@@ -1,0 +1,67 @@
+﻿23:01:43.300 [S] conmutador escuchando en 127.0.0.1:5050 (cola de 1, 1.0 s por reenv�o)
+23:01:43.308 [S] cliente A conectado
+23:01:43.309 [S] cliente B conectado
+23:01:43.310 [S] cliente C conectado
+23:01:43.310 [S] A pregunta el estado -> LISTO
+23:01:43.310 [S] B pregunta el estado -> LISTO
+23:01:43.311 [S] paquete de A en cola (1/1)
+23:01:43.311 [S] procesando paquete de A: primer car�cter -> destino B
+23:01:43.311 [S] paquete de B en cola (1/1)
+23:01:43.311 [A] -> S: "HOLA DESDE A" para B: -... / .- / .... --- .-.. .- / -.. . ... -.. . / .-
+23:01:43.311 [S] C pregunta el estado -> OCUPADO
+23:01:43.311 [B] -> S: "REDES DE DATOS" para C: -.-. / -... / .-. . -.. . ... / -.. . / -.. .- - --- ...
+23:01:43.311 [S] A pregunta el estado -> OCUPADO
+23:01:43.311 [C] conmutador OCUPADO, se reintenta en 1 s
+23:01:43.311 [A] conmutador OCUPADO, se reintenta en 1 s
+23:01:43.311 [S] B pregunta el estado -> OCUPADO
+23:01:43.312 [B] conmutador OCUPADO, se reintenta en 1 s
+23:01:44.311 [B] <- de A: "HOLA DESDE A"
+23:01:44.311 [S] reenviado a B
+23:01:44.311 [S] procesando paquete de B: primer car�cter -> destino C
+23:01:44.311 [S] B responde OK para A
+23:01:44.311 [A] confirmaci�n: B recibi� el mensaje
+23:01:44.312 [S] A pregunta el estado -> LISTO
+23:01:44.312 [S] C pregunta el estado -> LISTO
+23:01:44.312 [S] B pregunta el estado -> LISTO
+23:01:44.312 [S] paquete de A en cola (1/1)
+23:01:44.312 [C] conmutador OCUPADO, se reintenta en 1 s
+23:01:44.312 [A] -> S: "PAQUETE NUMERO DOS" para C: -.-. / .- / .--. .- --.- ..- . - . / -. ..- -- . .-. --- / -.. --- ...
+23:01:44.312 [B] conmutador OCUPADO, se reintenta en 1 s
+23:01:45.312 [S] reenviado a C
+23:01:45.312 [S] procesando paquete de A: primer car�cter -> destino C
+23:01:45.312 [C] <- de B: "REDES DE DATOS"
+23:01:45.312 [S] C responde OK para B
+23:01:45.312 [B] confirmaci�n: C recibi� el mensaje
+23:01:45.314 [S] C pregunta el estado -> LISTO
+23:01:45.314 [S] B pregunta el estado -> LISTO
+23:01:45.314 [S] paquete de C en cola (1/1)
+23:01:45.314 [C] -> S: "MENSAJE URGENTE" para A: .- / -.-. / -- . -. ... .- .--- . / ..- .-. --. . -. - .
+23:01:45.314 [S] C pregunta el estado -> OCUPADO
+23:01:45.315 [B] conmutador OCUPADO, se reintenta en 1 s
+23:01:45.315 [C] conmutador OCUPADO, se reintenta en 1 s
+23:01:46.313 [C] <- de A: "PAQUETE NUMERO DOS"
+23:01:46.313 [S] reenviado a C
+23:01:46.313 [S] procesando paquete de C: primer car�cter -> destino A
+23:01:46.313 [S] C responde OK para A
+23:01:46.313 [A] confirmaci�n: C recibi� el mensaje
+23:01:46.315 [S] C pregunta el estado -> LISTO
+23:01:46.315 [S] B pregunta el estado -> LISTO
+23:01:46.315 [S] paquete de C en cola (1/1)
+23:01:46.315 [C] -> S: "DESTINO INEXISTENTE" para D: -.. / -.-. / -.. . ... - .. -. --- / .. -. . -..- .. ... - . -. - .
+23:01:46.315 [B] conmutador OCUPADO, se reintenta en 1 s
+23:01:47.313 [S] reenviado a A
+23:01:47.313 [S] procesando paquete de C: primer car�cter -> destino D
+23:01:47.313 [A] <- de C: "MENSAJE URGENTE"
+23:01:47.313 [S] A responde OK para C
+23:01:47.313 [C] confirmaci�n: A recibi� el mensaje
+23:01:47.316 [S] B pregunta el estado -> LISTO
+23:01:47.316 [S] paquete de B en cola (1/1)
+23:01:47.316 [B] -> S: "CONMUTADOR LISTO" para A: .- / -... / -.-. --- -. -- ..- - .- -.. --- .-. / .-.. .. ... - ---
+23:01:48.314 [S] destino D desconocido, se avisa a C
+23:01:48.314 [S] procesando paquete de B: primer car�cter -> destino A
+23:01:48.314 [C] el conmutador no conoce al destino D
+23:01:49.315 [S] reenviado a A
+23:01:49.315 [A] <- de B: "CONMUTADOR LISTO"
+23:01:49.315 [S] A responde OK para B
+23:01:49.315 [B] confirmaci�n: A recibi� el mensaje
+23:01:50.816 [demo] mensajes entregados y confirmados: 5/5
